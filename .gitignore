@@ -1,0 +1,81 @@
+# Generals 3
+*.log
+*.bak
+*.swp
+.DS_Store
+*.env
+.env.local
+.env.*.local
+*.tmp
+
+# Terraforms
+# Ignore Terraform state files and directories
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+*.tfstate.*.backup
+terraform.tfstate.d/
+# Ignore Terraform lock file
+.terraform.lock.hcl
+# Ignore Terraform provider and module caches
+.terraform/
+# Ignore Terraform plan files
+*.tfplan
+*.tfplan.*
+
+# SSH Keys
+# Ignore SSH private and public key files
+*.pub
+id_*
+*key
+*key.pem
+*.key
+*.pem
+# Ignore SSH configuration files (optional, depending on use case)
+.ssh/
+
+# Docker
+# Ignore Docker build artifacts and temporary files
+Dockerfile.local
+*.dockerignore
+docker-compose.override.yml
+# Ignore Docker volumes and images (if stored locally)
+*.tar
+*.tar.gz
+# Ignore Docker environment files
+.env
+.env.local
+.env.*.local
+
+# Kubernetes
+# Ignore Kubernetes configuration files with sensitive data
+*.kubeconfig
+kubeconfig
+# Ignore local Kubernetes manifests that might contain sensitive data
+*.yaml.local
+*.yml.local
+# Ignore Helm charts cached files
+charts/
+# Ignore Helm temporary files
+*.tgz
+*.helm
+
+# Kind (Kubernetes-in-Docker)
+# Ignore Kind configuration files with sensitive or local data
+kind-config.yaml
+kind-config.yml
+# Ignore Kind cluster data directories
+.kube/
+kind/
+
+# Miscellaneous
+# Ignore local environment variables or secrets
+secrets/
+# Ignore temporary directories
+tmp/
+temp/
+# Ignore IDE or editor-specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
